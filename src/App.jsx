@@ -1,12 +1,20 @@
-function App() {
+import React from 'react';
+import './assets/fonts/fonts.css';
+import Navbar from './components/navbar/Navbar';
+import Hero from './components/hero/Hero';
+import About from './components/about/About';
+import Experiences from './components/experiences/Experiences';
+import Skills from './components/skills/Skills';
 
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My React App</h1>
-        <p>This is a simple React application.</p>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+    </>
   );
 }
+
 export default App;
