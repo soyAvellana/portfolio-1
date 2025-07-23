@@ -7,6 +7,7 @@ import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import ProjectCard from './components/projects/Projects';
 import Experiences from './components/experiences/Experiences';
+import Contact from './components/contact/Contact';
 
 function HomePage() {
   return (
@@ -34,9 +35,10 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<ProjectCard />} />
         <Route path="/experiences" element={<Experiences />} />
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
-      
+
     </Router>
   );
 }

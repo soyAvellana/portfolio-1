@@ -33,7 +33,8 @@ function Projects() {
 
         <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto my-4" />
         <p className="text-gray-300 text-lg lg:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
-          Some projects I've built to apply and expand my frontend skills. Clean, responsive and focused on user interface.
+          Some projects I've built to apply and expand my frontend skills. <br></br>
+          Clean, responsive and focused on user interface.
         </p>
       </div>
 

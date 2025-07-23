@@ -28,11 +28,9 @@ function Hero() {
   </span>
 </h1>
 
-
-
-        <p className="mt-8 text-gray-300 text-lg md:text-xl font-medium">
-          I craft intuitive and elegant web interfaces with clean code and creative design.
-        </p>
+   <p className="mt-8 text-gray-300 text-lg md:text-xl font-medium">
+   I craft intuitive and elegant web interfaces with clean code and creative design.
+   </p>
 
 
 
