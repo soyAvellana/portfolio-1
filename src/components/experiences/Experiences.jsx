@@ -1,45 +1,62 @@
 import React from 'react';
 
-const timeline = [
+const experiences = [
   {
-    year: '2018',
-    title: 'Meine Reise beginnt',
-    description: 'Ich schrieb meine erste Zeile HTML – sofort war ich fasziniert von Webentwicklung.',
+    year: 'Apr – Jul 2025',
+    title: 'Frontend Developer Trainee',
+    company: 'DBE Academy',
+    description:
+      'Completed an intensive training program focused on frontend development and modern frameworks.',
   },
   {
-    year: '2020',
-    title: 'Erste echte Projekte',
-    description: 'Ich gestaltete erste Webseiten für Freunde und lokale Initiativen – Design & Struktur wurden meine Leidenschaft.',
+    year: '2023 – 2024',
+    title: 'Self-Taught Programming',
+    company: 'FreeCodeCamp & Mimo',
+    description:
+      'Learned HTML, CSS, JavaScript and React through hands-on practice, challenges and projects.',
   },
   {
-    year: '2022',
-    title: 'React & UI Design',
-    description: 'Ich verliebte mich in Komponenten, Props und Tailwind. Sauberes Design trifft auf sauberen Code.',
-  },
-  {
-    year: '2024',
-    title: 'Portfolio & Freelance',
-    description: 'Ich baue moderne, performante Frontends – mit Fokus auf Nutzererlebnis, Klarheit & Kreativität.',
+    year: '2020 – 2024',
+    title: 'Youth & Residential Educator',
+    company: 'Abenteuerspielplatz Feuerbach',
+    description:
+      'Worked with children and teens, and also handled creative and design tasks in the educational environment.',
   },
 ];
 
-function Experiences() {
+
+
+function ExperienceTimeline() {
   return (
-    <section id="experiences" className="bg-white dark:bg-[#0f0f3d] py-20 px-6 text-black dark:text-white">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-            EXPERIENCE
-          </span>
+    <section className="min-h-screen bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 py-20">
+      <div className="max-w-6xl mx-auto text-center mb-16">
+        <h2 className="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent font-sans">
+          Experience
         </h2>
-        <div className="relative border-l-2 border-purple-400 dark:border-purple-500 ml-4">
-          {timeline.map((item, index) => (
-            <div key={index} className="mb-10 ml-6 relative">
-              <div className="absolute -left-4 w-8 h-8 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full border-4 border-white dark:border-[#0f0f3d]"></div>
-              <p className="text-sm text-gray-500 dark:text-gray-300">{item.year}</p>
-              <h3 className="text-xl font-semibold">{item.title}</h3>
-              <p className="mt-1 text-gray-700 dark:text-gray-300 text-sm">{item.description}</p>
+        <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto mb-6"></div>
+      </div>
+
+      <div className="max-w-5xl mx-auto relative">
+
+        <div className="absolute top-0 left-[20px] h-full w-[2px] bg-white/20"></div>
+
+   
+
+        <div className="flex flex-col space-y-12 ml-12">
+
+          {experiences.map((exp, index) => (
+            <div key={index} className="relative">
+      
+              <span className="absolute -left-[36px] top-8 w-4 h-4 rounded-full bg-purple-500 ring-2 ring-white/30 shadow" />
+
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <p className="text-sm text-gray-300 mb-1">{exp.year}</p>
+                <h3 className="text-xl font-semibold text-purple-400">{exp.title}</h3>
+                <p className="text-md font-medium text-blue-400 mb-2">{exp.company}</p>
+                <p className="text-gray-200">{exp.description}</p>
+              </div>
             </div>
+            
           ))}
         </div>
       </div>
@@ -47,4 +64,4 @@ function Experiences() {
   );
 }
 
-export default Experiences;
+export default ExperienceTimeline;
