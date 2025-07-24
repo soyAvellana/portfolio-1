@@ -70,8 +70,12 @@ function Portfolio() {
                   <img
                     src={project.image}
                     alt={`${project.title} Mockup`}
+
                      loading="lazy"
                   className="w-full h-full object-cover object-[10%_center] transition-transform duration-700 group-hover:scale-110"
+
+                      className="w-full h-full object-cover object-[10%_center] transition-transform duration-700 group-hover:scale-110"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -116,6 +120,18 @@ function Portfolio() {
   Live Demo
 </a>
 
+    <a
+        href={project.live}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Live demo of ${project.title}`}
+  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 group/link"
+>
+  <FaExternalLinkAlt className="group-hover/link:translate-x-1 transition-transform duration-300" />
+  Live Demo
+</a>
+
+>>>>>>> fb8c663 (Changed the h2):src/components/Portfolio/Portfolio.jsx
 <a
   href={project.github}
   target="_blank"
