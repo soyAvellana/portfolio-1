@@ -14,7 +14,7 @@ import { FaLanguage } from 'react-icons/fa';
 
 function About() {
   return (
-   <div className="min-h-screen pt-24 pb-20 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 lg:flex lg:items-center lg:justify-center relative overflow-hidden">
+    <div className="min-h-[130vh] pt-20 pb-20 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 flex items-center justify-center relative overflow-hidden">
   
           <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl animate-pulse"></div>

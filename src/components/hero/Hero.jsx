@@ -4,7 +4,8 @@ import { FaGithub, FaLinkedin, FaCode, FaPalette, FaLightbulb } from 'react-icon
 
 function Hero() {
   return (
-    <div className="min-h-[120vh] pt-20 bg-gradient-to-br from-[#0f0f3d] to-[#03001e] text-white flex items-center justify-center">
+<div className="min-h-screen pt-24 bg-gradient-to-br from-[#0f0f3d] to-[#03001e] text-white flex flex-col lg:items-center justify-center">
+
       <div className="max-w-4xl px-6 text-center">
         
 

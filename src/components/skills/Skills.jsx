@@ -27,7 +27,7 @@ function Skills() {
   return (
   <div
   id="skills"
-  className="min-h-screen py-36 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 flex items-center justify-center relative overflow-hidden"
+  className="min-h-screen py-32 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 flex items-center justify-center relative overflow-hidden"
 >
   
       <div className="absolute inset-0 pointer-events-none">

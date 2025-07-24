@@ -55,7 +55,8 @@ function Portfolio() {
                   <img
                     src={project.image}
                     alt={`${project.title} Mockup`}
-                      className="w-full h-full object-cover object-[10%_center] transition-transform duration-700 group-hover:scale-110"
+                     loading="lazy"
+                  className="w-full h-full object-cover object-[10%_center] transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -84,13 +85,18 @@ function Portfolio() {
                   </div>
 
                   <div className="flex items-center justify-between pt-4 border-t border-white/10">
-    <a
-        href={project.live}
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label={`Live demo of ${project.title}`}
+    
+    
+    
+          <a
+            href={project.live}
+             target="_blank"
+              rel="noopener noreferrer"
+                aria-label={`Live demo of ${project.title}`}
   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 group/link"
 >
+
+
   <FaExternalLinkAlt className="group-hover/link:translate-x-1 transition-transform duration-300" />
   Live Demo
 </a>
