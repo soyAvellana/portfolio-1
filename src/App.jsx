@@ -5,40 +5,43 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
-import ProjectCard from './components/projects/Projects';
+import Portfolio from './components/Portfolio/Portfolio';
 import Experiences from './components/experiences/Experiences';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function HomePage() {
   return (
     <>
       <Hero />
-
       <About />
-
       <Skills />
-      <ProjectCard />
+      <Portfolio />
+      <Contact />
     </>
   );
-
 }
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
 
-      <Routes>
+      
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/experiences" element={<Experiences />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
 
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<ProjectCard />} />
-        <Route path="/experiences" element={<Experiences />} />
-        <Route path="/contact" element={<Contact />} />
-
-      </Routes>
-
+        <Footer />
+      </div>
     </Router>
   );
 }
