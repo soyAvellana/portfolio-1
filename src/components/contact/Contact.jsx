@@ -31,12 +31,11 @@ function Contact() {
   return (
     <section
   id="contact"
-  className="min-h-[120vh] py-32 bg-[#0f0f3d] text-white px-6 flex flex-col items-center justify-center relative overflow-hidden"
->
+className="min-h-screen pt-24 pb-20 bg-[#0f0f3d] text-white px-6 flex flex-col items-center lg:justify-center relative overflow-hidden">
   <div className="max-w-4xl w-full text-center mb-16 z-10 relative">
-    <h2 className="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-      CONTACT
-    </h2>
+    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+  CONTACT </h2>
+
     <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto my-4" />
     <p className="text-gray-300 text-lg lg:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
       Let’s collaborate on something creative, inspiring, or just fun.<br />
@@ -44,8 +43,9 @@ function Contact() {
     </p>
   </div>
 
+
+
   <div className="w-full max-w-2xl bg-white/5 backdrop-blur-md border border-purple-500/10 rounded-2xl p-10 shadow-2xl z-10 space-y-8">
-    {/* FORM */}
     <form ref={form} onSubmit={sendEmail} className="space-y-4">
       <input
         type="text"
@@ -77,9 +77,11 @@ function Contact() {
       {status && (
         <p className="text-center text-sm text-green-400 mt-2">{status}</p>
       )}
-    </form>
+   </form>
 
-    {/* EMAIL + SOCIALS */}
+  
+
+
     <div className="text-center space-y-4">
       <a
         href="mailto:hazelhmurcu@live.de"

@@ -16,7 +16,6 @@ const projects = [
 ];
 
 
-
 function Portfolio() {
   return (
     <section
@@ -27,9 +26,8 @@ function Portfolio() {
       
 
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-black leading-tight mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent" style={{ fontSize: '48px' }}>
-            PORTFOLIO
-          </h2>
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+  PORTFOLIO </h2>
 
           <div className="flex justify-center mb-8">
             <div className="w-32 h-1 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full" />
@@ -57,7 +55,7 @@ function Portfolio() {
                   <img
                     src={project.image}
                     alt={`${project.title} Mockup`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full object-cover object-[10%_center] transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -86,25 +84,27 @@ function Portfolio() {
                   </div>
 
                   <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 group/link"
-                    >
-                      <FaExternalLinkAlt className="group-hover/link:translate-x-1 transition-transform duration-300" />
-                      Live Demo
-                    </a>
+    <a
+        href={project.live}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Live demo of ${project.title}`}
+  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 group/link"
+>
+  <FaExternalLinkAlt className="group-hover/link:translate-x-1 transition-transform duration-300" />
+  Live Demo
+</a>
 
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-400 hover:text-white font-medium transition-all duration-300 group/link"
-                    >
-                      <FaGithub className="group-hover/link:rotate-12 transition-transform duration-300" />
-                      Code
-                    </a>
+<a
+  href={project.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Source code of ${project.title} on GitHub`}
+  className="flex items-center gap-2 text-gray-400 hover:text-white font-medium transition-all duration-300 group/link"
+>
+  <FaGithub className="group-hover/link:rotate-12 transition-transform duration-300" />
+  Code
+</a>
                   </div>
                 </div>
               </div>

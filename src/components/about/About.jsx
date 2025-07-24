@@ -14,7 +14,7 @@ import { FaLanguage } from 'react-icons/fa';
 
 function About() {
   return (
-    <div className="min-h-[130vh] pt-20 pb-20 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 flex items-center justify-center relative overflow-hidden">
+   <div className="min-h-screen pt-24 pb-20 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 lg:flex lg:items-center lg:justify-center relative overflow-hidden">
   
           <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl animate-pulse"></div>
@@ -27,11 +27,13 @@ function About() {
 
         
        
-        <div className="text-center lg:text-left space-y-8">
-          <div>
-           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent font-sans">ABOUT ME</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto lg:mx-0 mb-6"></div>
-          </div>
+     <div className="text-center lg:text-left space-y-8">
+  <div>
+    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent font-sans">
+      ABOUT ME
+    </h2>
+    <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto lg:mx-0 mb-6"></div>
+  </div>
           
           <p className="text-gray-300 text-lg lg:text-xl font-medium leading-relaxed">
             Hi, I'm <span className="text-purple-400 font-semibold">Hazel.</span> I'm a frontend developer with a passion for clean design, 
