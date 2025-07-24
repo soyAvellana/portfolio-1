@@ -27,7 +27,7 @@ function Hero() {
       speed={50}
       repeat={Infinity}
       cursor={true}
-      style={{ display: 'inline-block' }}
+         style={{ display: 'inline-block' }}
     />
   </span>
 </h1>
