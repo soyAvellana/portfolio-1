@@ -10,27 +10,27 @@ function Hero() {
         
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6">
-          <span className="block text-gray-200 mb-4">Hello, I'm</span>
+  <span className="block text-gray-200 mb-4">Hello, I'm</span>
 
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400">
-            <TypeAnimation
-              sequence={[
-                'Hazel',
-                2000,
-                'Frontend Developer',
-                2000,
-                'React Lover',
-                2000,
-                'Creative Mind',
-                2000,
-              ]}
-              speed={50}
-              repeat={Infinity}
-              cursor={true}
-              style={{ display: 'inline-block' }}
-            />
-          </span>
-        </h1>
+  <span className="block min-h-[48px] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400">
+    <TypeAnimation
+      sequence={[
+        'Hazel',
+        2000,
+        'Frontend Developer',
+        2000,
+        'React Lover',
+        2000,
+        'Creative Mind',
+        2000,
+      ]}
+      speed={50}
+      repeat={Infinity}
+      cursor={true}
+      style={{ display: 'inline-block' }}
+    />
+  </span>
+</h1>
 
   
         <div className="max-w-3xl mx-auto mb-12">
