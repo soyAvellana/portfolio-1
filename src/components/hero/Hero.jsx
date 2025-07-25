@@ -9,6 +9,7 @@ function Hero() {
       <div className="max-w-4xl px-6 text-center">
         
 
+
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6">
   <span className="block text-gray-200 mb-4">Hello, I'm</span>
 
@@ -26,7 +27,7 @@ function Hero() {
       ]}
       speed={50}
       repeat={Infinity}
-      cursor={true}
+      cursor={false}
          style={{ display: 'inline-block' }}
     />
   </span>
