@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import tacoMockup from '../../assets/img/taco-mockup.png';
 
@@ -17,6 +17,10 @@ const projects = [
 
 
 function Portfolio() {
+  useEffect(()=>{
+  document.title = "Portfolio - Hazel Hamurcu";
+  }, []);
+
   return (
     <section
       id="projects"

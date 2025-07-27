@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Contact() {
   useEffect(() => {
-    document.title = 'Contact';
+    document.title = 'Contact - Hazel Hamurcu';
   }, []);
   const form = useRef();
   const [status, setStatus] = useState('');

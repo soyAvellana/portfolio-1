@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   FaHtml5,
   FaCss3Alt,
@@ -24,6 +24,10 @@ const skills = [
 ];
 
 function Skills() {
+useEffect(()=>{
+  document.title = "Skills - Hazel Hamurcu";
+}, []);
+
   return (
   <div
   id="skills"

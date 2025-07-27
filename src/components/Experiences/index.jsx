@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const experiences = [
   {
@@ -25,6 +25,9 @@ const experiences = [
 ];
 
 function ExperienceTimeline() {
+    useEffect(() => {
+      document.title = 'My Experiences';
+    }, []);
   return (
     <section className="min-h-[130vh] py-36 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6">
       <div className="max-w-6xl mx-auto text-center mb-20">

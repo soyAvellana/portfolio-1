@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
+  
   return (
     <footer className="bg-[#0a0a23] text-white py-12 px-6 border-t border-white/10">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center space-y-6 text-center">

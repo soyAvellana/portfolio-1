@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/navbar/Navbar';
-import Hero from './components/hero/Hero';
-import About from './components/about/About';
-import Skills from './components/skills/Skills';
-import Portfolio from './components/Portfolio/Portfolio';
-import Experiences from './components/experiences/Experiences';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
+import Experiences from './components/Experiences';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function HomePage() {
   return (
