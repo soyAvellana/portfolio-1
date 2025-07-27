@@ -1,8 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Contact() {
+  useEffect(() => {
+    document.title = 'Contact';
+  }, []);
   const form = useRef();
   const [status, setStatus] = useState('');
   const [isLoading, setIsLoading] = useState(false);

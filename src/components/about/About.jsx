@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import profileImg from '../../assets/img/Profile.jpg';
 
 import {
@@ -12,7 +12,11 @@ import {
 
 import { FaLanguage } from 'react-icons/fa'; 
 
+
 function About() {
+  useEffect(() => {
+    document.title = 'About Me – Hazel';
+  }, []);
   return (
     <div className="min-h-[130vh] pt-20 pb-20 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 flex items-center justify-center relative overflow-hidden">
   
