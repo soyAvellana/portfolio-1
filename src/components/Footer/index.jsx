@@ -1,37 +1,24 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGavel } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; 
 
 function Footer() {
-  
   return (
-    <footer className="bg-[#0a0a23] text-white py-12 px-6 border-t border-white/10">
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center space-y-6 text-center">
+    <footer className="bg-[#0a0a23] text-white py-8 px-6 border-t border-white/10">
+      <div className="max-w-screen-xl mx-auto flex flex-col items-center space-y-4 text-center">
+
         <p className="text-sm text-white/60">
           © {new Date().getFullYear()} Hazel Hamurcu — All rights reserved.
         </p>
 
-        <div className="flex space-x-6 text-xl text-white/50">
-          <a
-            href="https://github.com/soyAvellana"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-            aria-label="GitHub"
-          >
-            <FaGithub />
-          </a>
+        <Link
+          to="/legal" 
+          className="flex items-center space-x-2 text-sm text-white/50 hover:text-white transition"
+        >
+          <FaGavel className="text-xs" />
+          <span>Impressum & Datenschutz</span>
+        </Link>
 
-          
-          <a
-            href="https://www.linkedin.com/in/hazel-hamurcu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
       </div>
     </footer>
   );

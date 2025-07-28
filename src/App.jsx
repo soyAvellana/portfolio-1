@@ -9,6 +9,9 @@ import Portfolio from './components/Portfolio';
 import Experiences from './components/Experiences';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Legal from './components/Impressum';
+import ScrollTopButton from './components/ScrollTopButton';
+
 
 function HomePage() {
   return (
@@ -18,6 +21,7 @@ function HomePage() {
       <Skills />
       <Portfolio />
       <Contact />
+  
     </>
   );
 }
@@ -37,10 +41,12 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/experiences" element={<Experiences />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/legal" element={<Legal />} />
           </Routes>
         </main>
 
         <Footer />
+         <ScrollTopButton />
       </div>
     </Router>
   );
