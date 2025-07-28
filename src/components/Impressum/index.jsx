@@ -7,7 +7,7 @@ function Legal() {
   }, []);
 
   return (
-    <div className="min-h-[100vh] pt-20 pb-20 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 flex items-center justify-center relative overflow-hidden">
+    <div className="min-h-4 pt-36 pb-20 bg-gradient-to-br from-[#0f0f3d] via-[#1a0f4d] to-[#03001e] text-white px-6 flex items-center justify-center relative overflow-hidden">
       
      
       <div className="absolute inset-0 pointer-events-none">
