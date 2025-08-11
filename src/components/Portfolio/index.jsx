@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import tacoMockup from '../../assets/img/taco-mockup.png';
+import orbixMockup from '../../assets/img/orbix-mockup.png';
 
 const projects = [
   {
@@ -11,6 +12,16 @@ const projects = [
     tech: ['React', 'Tailwind CSS'],
     live: 'https://soyavellana.github.io/taco-shop/',
     github: 'https://github.com/soyavellana/taco-shop',
+  },
+  
+    {
+    title: 'Orbix',
+    image: orbixMockup,
+    description:
+      'Fictional, responsive landing page for the Orbix travel assistant—holographic navigation, live translation, and AI planning.',
+    tech: ['React', 'Tailwind CSS'],
+    live: 'https://orbix-eosin.vercel.app/',
+    github: 'https://github.com/soyAvellana/travel-product',
   },
   
 ];
